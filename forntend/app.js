@@ -237,6 +237,3 @@ function deleteChat(index) {
 function toggleSidebar() {
     document.querySelector(".sidebar").classList.toggle("collapsed");
 }
-function toggleDarkMode() {
-    document.body.classList.toggle("dark");
-}

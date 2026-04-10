@@ -1,0 +1,131 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* BACKGROUND IMAGE */
+/* BACKGROUND IMAGE */
+
+body {
+    margin: 0;
+    height: 100vh;
+
+    background: url("background.jpeg") no-repeat center center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px); /* 🔥 blur only content area */
+}
+/* OVERLAY (GLASS EFFECT) */
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
+    /* background: rgba(0,0,0,0.3); slight dark overlay */
+
+    text-align: center;
+    /* color: white; */
+}
+
+/* MAIN CONTAINER
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+} */
+
+/* INTRO */
+#intro {
+    text-align: center;
+    color: rgb(0, 0, 0);
+
+    max-width: 600px;
+}
+
+/* BUTTON */
+.start-btn {
+    margin-top: 30px;
+    padding: 14px 24px;
+    border-radius: 25px;
+    border: none;
+    background: #ff9a9e;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* QUESTION BOX */
+#questionBox {
+    width: 500px;
+}
+
+/* HIDE */
+.hidden {
+    display: none;
+}
+
+/* OPTIONS */
+.options {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.opt {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* NAV BUTTONS */
+.nav-btns {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* DOTS */
+.dots {
+    margin-top: 25px;
+}
+
+.dot {
+    height: 14px;
+    width: 14px;
+    margin: 6px;
+    display: inline-block;
+
+    background: rgba(255,255,255,0.4);
+    border-radius: 50%;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dot.active {
+    background: white;
+    transform: scale(1.4);
+}
+#questionBox {
+    width: 500px;
+    padding: 30px;
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}

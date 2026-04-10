@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleque.css">
+
+</head>
+
+<body>
+
+<!-- BACKGROUND -->
+<div class="bg"></div>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+    <!-- INTRO SCREEN -->
+    <div id="intro">
+        <h1>
+            Hi, I’m Buddy 💛<br><br>
+            Before we begin, I’d love to know a little about you.<br>
+            This will help me support you in a way that truly fits your feelings and needs.
+        </h1>
+
+        <button onclick="startQuestions()" class="start-btn">
+            Let’s Begin
+        </button>
+    </div>
+
+    <!-- QUESTION SCREEN -->
+    <div id="questionBox" class="hidden">
+
+        <h2 id="questionText">Question 1</h2>
+
+        <!-- OPTIONS -->
+        <div class="options">
+            <button class="opt">Option 1</button>
+            <button class="opt">Option 2</button>
+            <button class="opt">Option 3</button>
+            <button class="opt">Option 4</button>
+        </div>
+
+        <!-- NAVIGATION -->
+        <div class="nav-btns">
+            <button onclick="prevQuestion()">Previous</button>
+            <button onclick="nextQuestion()">Next</button>
+        </div>
+
+        <!-- DOTS -->
+        <div class="dots" id="dotsContainer"></div>
+
+    </div>
+
+</div>
+
+<script src="question.js"></script>
+</body>
+</html>
