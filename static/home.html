@@ -65,12 +65,25 @@
 <script src="app.js"></script>
 
 <script>
+    // Auth Check
+    const token = localStorage.getItem("token");
+    if (!token) {
+        window.location.href = "login.html";
+    }
+
     let user = JSON.parse(localStorage.getItem("currentUser"));
     if (user) {
         document.getElementById("username").innerText = user.name + " 👋";
     }
 
+    // Initial load
     renderHistory();
+    
+    // If there's a current session, load it
+    const savedSessionId = localStorage.getItem("currentSessionId");
+    if (savedSessionId && savedSessionId !== "null") {
+        loadChat(savedSessionId);
+    }
 </script>
 
 </body>
